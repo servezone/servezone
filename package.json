@@ -1,0 +1,19 @@
+{
+  "name": "servezone",
+  "version": "1.0.0",
+  "description": "connects to the serve.zone API",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/servezone/servezone.git"
+  },
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/servezone/servezone/issues"
+  },
+  "homepage": "https://gitlab.com/servezone/servezone#README"
+}
