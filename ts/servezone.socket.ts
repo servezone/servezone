@@ -1,8 +1,14 @@
 import * as plugins from "./servezone.plugins";
 
-let app = plugins.express();
-var server = require('http').Server(app);
-var io = require('socket.io')(server);
+
+export interface ISocketObject {
+  socket:SocketIO.Socket,
+  authenticated:boolean
+}
+
+export let app:plugins.express.Express;
+export let server = require('http').Server(app);
+export let io = plugins.socketIo(server);
 
 server.listen(80);
 
