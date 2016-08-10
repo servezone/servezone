@@ -1,12 +1,14 @@
 import * as plugins from "./servezone.plugins";
 
-import * as ServezoneConfigModule from "./servezone.config";
-import * as ServezoneSocketModule from "./servezone.socket";
+import * as ConfigModule from "./servezone.config";
+import * as SocketModule from "./servezone.socket";
 
-export let start = () => {
-    
+export let start = (configArg:ConfigModule.IServezoneConfig) => {
+    SocketModule.initServer(configArg)
+        .then(SocketModule.initSocketCommunication);
 };
 
 export let stop = () => {
-    
+    SocketModule.closeServer();
 };
+
