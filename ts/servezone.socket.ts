@@ -21,4 +21,3 @@ export let deInit = () => {
     };
     return done.promise;
 }
-
