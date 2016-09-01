@@ -3,16 +3,16 @@ easy and advanced production docker management.
 
 ## Availabililty
 [![npm](https://push.rocks/assets/repo-button-npm.svg)](https://www.npmjs.com/package/servezone)
-[![git](https://push.rocks/assets/repo-button-git.svg)](https://gitlab.com/pushrocks/servezone)
-[![git](https://push.rocks/assets/repo-button-mirror.svg)](https://github.com/pushrocks/servezone)
-[![docs](https://push.rocks/assets/repo-button-docs.svg)](https://pushrocks.gitlab.io/servezone/docs)
+[![git](https://push.rocks/assets/repo-button-git.svg)](https://gitlab.com/servezone/servezone)
+[![git](https://push.rocks/assets/repo-button-mirror.svg)](https://github.com/servezone/servezone)
+[![docs](https://push.rocks/assets/repo-button-docs.svg)](https://servezone.gitlab.io/servezone/docs)
 
 ## Status for master
-[![build status](https://gitlab.com/pushrocks/servezone/badges/master/build.svg)](https://gitlab.com/pushrocks/servezone/commits/master)
-[![coverage report](https://gitlab.com/pushrocks/servezone/badges/master/coverage.svg)](https://gitlab.com/pushrocks/servezone/commits/master)
-[![Dependency Status](https://david-dm.org/pushrocks/servezone.svg)](https://david-dm.org/pushrocks/servezone)
-[![bitHound Dependencies](https://www.bithound.io/github/pushrocks/servezone/badges/dependencies.svg)](https://www.bithound.io/github/pushrocks/servezone/master/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/pushrocks/servezone/badges/code.svg)](https://www.bithound.io/github/pushrocks/servezone)
+[![build status](https://gitlab.com/servezone/servezone/badges/master/build.svg)](https://gitlab.com/servezone/servezone/commits/master)
+[![coverage report](https://gitlab.com/servezone/servezone/badges/master/coverage.svg)](https://gitlab.com/servezone/servezone/commits/master)
+[![Dependency Status](https://david-dm.org/servezone/servezone.svg)](https://david-dm.org/servezone/servezone)
+[![bitHound Dependencies](https://www.bithound.io/github/servezone/servezone/badges/dependencies.svg)](https://www.bithound.io/github/servezone/servezone/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/servezone/servezone/badges/code.svg)](https://www.bithound.io/github/servezone/servezone)
 [![TypeScript](https://img.shields.io/badge/TypeScript-2.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 [![node](https://img.shields.io/badge/node->=%206.x.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 
