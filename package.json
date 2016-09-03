@@ -19,12 +19,15 @@
   "homepage": "https://gitlab.com/servezone/servezone#README",
   "devDependencies": {
     "@types/request": "0.0.28",
+    "@types/should": "^8.1.29",
     "@types/socket.io-client": "^1.4.26",
     "npmts-g": "^5.2.8",
     "should": "^11.1.0",
     "typings-test": "^1.0.1"
   },
   "dependencies": {
+    "@types/bluebird": "^3.0.32",
+    "@types/mongodb": "^2.1.32",
     "@types/q": "0.x.x",
     "@types/socket.io": "^1.4.26",
     "beautylog": "^5.0.20",
