@@ -25,7 +25,8 @@ It uses websockets for easy communication between nodes and features realtime no
 * **ServeZone Manager:** A servezone manager manages a ServeZone cluster.
 * **ServeZone Node:** A servezone node runs servezone services
 * **ServeZone Service** ServezoneServices are docker containers that are scheduled using the ServeZone Manager Api
-
+    * Services can be categorized in Masterservices and Subservices.
+      Subservices can provide certain functionailty to Masterservices
 ### Create an servezone instance.
 First off servezone will check for the `DOCKER=true` env variable.
 If docker is set to true it will look for an config at /config.

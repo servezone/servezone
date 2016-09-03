@@ -1,4 +1,6 @@
+import { Objectmap } from "lik";
 import { SzNode } from "./servezone.classes.sznode";
+export declare let allSzServices: Objectmap<SzService>;
 /**
  * class SzService describes a service
  */
@@ -7,5 +9,11 @@ export declare class SzService {
     versionAvailable: string;
     versionDeployed: string;
     nodesUsed: SzNode[];
+    constructor();
+}
+/**
+ * class SzSubService extends SzService. A Subservice belongs to a Maserservice.
+ */
+export declare class SzSubService extends SzService {
     constructor();
 }
