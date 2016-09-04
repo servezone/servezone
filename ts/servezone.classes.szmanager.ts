@@ -15,19 +15,23 @@ export class SzManager {
         this.smartsocket = new Smartsocket({
             port: portArg
         });
+        this.smartsocket;
     };
 
     /**
      * starts a smartsocket server
      */
-    startServer(): void {
+    startServer(): plugins.q.Promise<any> {
+        let done = plugins.q.defer<any>();
         this.smartsocket.startServer();
+        return done.promise;
     };
 
     /**
      * connects to a database
      */
     connectDatabase() {
-
-    }
+        let done = plugins.q.defer<any>();
+        return done.promise;
+    };
 };

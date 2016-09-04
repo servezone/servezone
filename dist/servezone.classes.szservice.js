@@ -11,7 +11,7 @@ class SzService {
 exports.SzService = SzService;
 ;
 /**
- * class SzSubService extends SzService. A Subservice belongs to a Maserservice.
+ * class SzSubService extends SzService. A Subservice belongs to a Masterservice.
  */
 class SzSubService extends SzService {
     constructor() {

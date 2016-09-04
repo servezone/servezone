@@ -12,7 +12,7 @@ export declare class SzService {
     constructor();
 }
 /**
- * class SzSubService extends SzService. A Subservice belongs to a Maserservice.
+ * class SzSubService extends SzService. A Subservice belongs to a Masterservice.
  */
 export declare class SzSubService extends SzService {
     constructor();

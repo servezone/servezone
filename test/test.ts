@@ -11,8 +11,12 @@ describe("servezone", function () {
             testSzManager = new servezone.SzManager();
             should(testSzManager).be.instanceof(servezone.SzManager);
         });
-        it("should connect to a database");
-        it("should start a smartsocket server");
+        it("should connect to a database",function(){
+            testSzManager.connectDatabase();
+        });
+        it("should start a smartsocket server",function(){
+            testSzManager.startServer();
+        });
         it("should");
     });
 });
