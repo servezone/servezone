@@ -20,4 +20,4 @@ export let deInit = () => {
         mainSmartsocket.closeServer();
     };
     return done.promise;
-}
+};

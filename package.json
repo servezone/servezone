@@ -33,7 +33,7 @@
     "lik": "^1.0.15",
     "q": "^1.4.1",
     "smartfile": "^4.0.15",
-    "smartsocket": "^1.1.4",
+    "smartsocket": "^1.1.5",
     "taskbuffer": "^1.0.8",
     "typings-global": "^1.0.14"
   }
