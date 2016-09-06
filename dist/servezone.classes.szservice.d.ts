@@ -1,5 +1,5 @@
-import { Objectmap } from "lik";
-import { SzNode } from "./servezone.classes.sznode";
+import { Objectmap } from 'lik';
+import { SzNode } from './servezone.classes.sznode';
 export declare let allSzServices: Objectmap<SzService>;
 /**
  * class SzService describes a service

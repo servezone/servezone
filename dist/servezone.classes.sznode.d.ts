@@ -1,5 +1,5 @@
-import { SocketConnection } from "smartsocket";
-import { Objectmap } from "lik";
+import { SocketConnection } from 'smartsocket';
+import { Objectmap } from 'lik';
 export declare let allSzNodes: Objectmap<SzNode>;
 export interface ISzNodeConstructorOptions {
     ip: number;

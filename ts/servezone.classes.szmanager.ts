@@ -40,5 +40,12 @@ export class SzManager {
     connectDatabase() {
         let done = plugins.q.defer<any>()
         return done.promise
+    };
+
+    /**
+     * terminate Servezone Manager
+     */
+    terminate() {
+        this.smartsocket.closeServer()
     }
 };
