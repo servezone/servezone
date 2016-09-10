@@ -5,4 +5,4 @@ export interface IServezoneConfig {
     authToken: string
 };
 
-export let config: IServezoneConfig;
+export let config: IServezoneConfig

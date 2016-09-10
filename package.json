@@ -32,6 +32,7 @@
     "iridium": "^7.0.0-alpha.16",
     "lik": "^1.0.15",
     "q": "^1.4.1",
+    "smartapp": "^1.0.2",
     "smartfile": "^4.0.15",
     "smartsocket": "^1.1.5",
     "taskbuffer": "^1.0.8",

@@ -1,23 +1,39 @@
-import * as plugins from "./servezone.plugins";
+import * as plugins from './servezone.plugins'
 
 // interfaces
-import { config } from "./servezone.config";
+import { config } from './servezone.config'
 
 let mainSmartsocket: plugins.smartsocket.Smartsocket = new plugins.smartsocket.Smartsocket({
     port: config.port
-});
+})
+
+let roleCi = new plugins.smartsocket.SocketRole({
+    name: 'ci',
+    passwordHash:  'someHash' // TODO
+})
+
+let roleSzNode = new plugins.smartsocket.SocketRole({
+    name: 'szNode',
+    passwordHash: 'someHash' // TODO
+})
+
+mainSmartsocket.addSocketRoles([
+    roleCi,
+    roleSzNode
+])
 
 export let init = () => {
-    let done = plugins.q.defer();
-    mainSmartsocket.startServer();
-    done.resolve();
-    return done.promise;
-};
+    let done = plugins.q.defer()
+
+    mainSmartsocket.startServer()
+    done.resolve()
+    return done.promise
+}
 
 export let deInit = () => {
-    let done = plugins.q.defer();
-    if (typeof mainSmartsocket !== "undefined") {
-        mainSmartsocket.closeServer();
+    let done = plugins.q.defer()
+    if (typeof mainSmartsocket !== 'undefined') {
+        mainSmartsocket.closeServer()
     };
-    return done.promise;
-};
+    return done.promise
+}
