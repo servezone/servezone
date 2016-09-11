@@ -29,7 +29,6 @@
     "@types/q": "0.x.x",
     "@types/socket.io": "^1.4.26",
     "beautylog": "^5.0.23",
-    "iridium": "^7.0.0-alpha.16",
     "lik": "^1.0.15",
     "q": "^1.4.1",
     "smartapp": "^1.0.2",
