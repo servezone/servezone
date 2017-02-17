@@ -1,8 +1,13 @@
 import * as plugins from './servezone.plugins'
 
-export interface IServezoneConfig {
-    port: number
-    authToken: string
+export class IServezoneConfig {
+  port: number
+  authToken: string
+  configOriginRepo: string
+  constructor () {
+    
+  }
 };
 
-export let config: IServezoneConfig
+export let config = new IServezoneConfig()
+
