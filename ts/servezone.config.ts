@@ -5,7 +5,7 @@ export class IServezoneConfig {
   authToken: string
   configOriginRepo: string
   constructor () {
-    
+    plugins.beautylog.figletSync('ServeZone')
   }
 };
 
