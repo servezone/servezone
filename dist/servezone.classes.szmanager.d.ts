@@ -1,4 +1,3 @@
-/// <reference types="q" />
 import * as plugins from './servezone.plugins';
 import { SzNode } from './servezone.classes.sznode';
 import { Smartsocket } from 'smartsocket';
@@ -21,7 +20,7 @@ export declare class SzManager {
     /**
      * connects to a database
      */
-    connectDatabase(): plugins.q.Promise<any>;
+    connectDatabase(): Promise<any>;
     /**
      * terminate Servezone Manager
      */
