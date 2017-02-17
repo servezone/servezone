@@ -1,7 +1,7 @@
 {
   "name": "servezone",
   "version": "1.0.3",
-  "description": "connects to the serve.zone API",
+  "description": "easy yet advanced production docker management",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
