@@ -4,4 +4,4 @@ export declare class IServezoneConfig {
     configOriginRepo: string;
     constructor();
 }
-export declare let config: IServezoneConfig;
+export declare let servezoneConfig: IServezoneConfig;
