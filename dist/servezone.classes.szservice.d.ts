@@ -1,14 +1,21 @@
 import { Objectmap } from 'lik';
-import { SzNode } from './servezone.classes.sznode';
 export declare let allSzServices: Objectmap<SzService>;
 /**
  * class SzService describes a service
  */
 export declare class SzService {
+    /**
+     * the docker image registry path to be used for the service
+     */
     imagePath: string;
+    /**
+     * the latest available version
+     */
     versionAvailable: string;
+    /**
+     * the version that is deployed
+     */
     versionDeployed: string;
-    nodesUsed: SzNode[];
     constructor();
 }
 /**

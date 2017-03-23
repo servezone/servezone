@@ -1,5 +1,3 @@
-import * as plugins from './servezone.plugins';
-import { SzNode } from './servezone.classes.sznode';
 import { Smartsocket } from 'smartsocket';
 /**
  * class SzManager manages a servezone cluster
@@ -7,7 +5,6 @@ import { Smartsocket } from 'smartsocket';
 export declare class SzManager {
     port: number;
     mongoConnection: any;
-    szNodesArray: SzNode[];
     smartsocket: Smartsocket;
     /**
      * constructor, sets up smartsocket
@@ -16,7 +13,7 @@ export declare class SzManager {
     /**
      * starts a smartsocket server
      */
-    startServer(): plugins.q.Promise<any>;
+    startServer(): Promise<any>;
     /**
      * connects to a database
      */

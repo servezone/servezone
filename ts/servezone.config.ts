@@ -9,5 +9,4 @@ export class IServezoneConfig {
   }
 };
 
-export let config = new IServezoneConfig()
-
+export let servezoneConfig = new IServezoneConfig()

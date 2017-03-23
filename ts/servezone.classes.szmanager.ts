@@ -1,5 +1,4 @@
 import * as plugins from './servezone.plugins'
-import { SzNode } from './servezone.classes.sznode'
 import { Smartsocket, SocketRole } from 'smartsocket'
 
 /**
@@ -8,7 +7,6 @@ import { Smartsocket, SocketRole } from 'smartsocket'
 export class SzManager {
   port: number
   mongoConnection
-  szNodesArray: SzNode[]
   smartsocket: Smartsocket
 
   /**

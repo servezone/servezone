@@ -1,9 +1,22 @@
 import 'typings-global'
-export import beautylog = require('beautylog')
-export import lik = require('lik')
-export import q = require('smartq')
-export import smartapp = require('smartapp')
-export import smartcli = require('smartcli')
-export import smartfile = require('smartfile')
-export import smartsocket = require('smartsocket')
-export import taskbuffer = require('taskbuffer')
+import * as beautylog from 'beautylog'
+import * as lik from 'lik'
+import * as path from 'path'
+import * as q from 'smartq'
+import * as smartapp from 'smartapp'
+import * as smartcli from 'smartcli'
+import * as smartfile from 'smartfile'
+import * as smartsocket from 'smartsocket'
+import * as taskbuffer from 'taskbuffer'
+
+export {
+    beautylog,
+    lik,
+    path,
+    q,
+    smartapp,
+    smartcli,
+    smartfile,
+    smartsocket,
+    taskbuffer
+}
