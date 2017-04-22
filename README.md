@@ -18,26 +18,6 @@ easy yet advanced production docker management
 [![node](https://img.shields.io/badge/node->=%206.x.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-## Usage
-Use TypeScript for best in class instellisense.
-
-servezone has a ready to use [official docker image](https://hub.docker.com/r/hosttoday/ht-docker-coretraffic/).
-It uses websockets for easy communication between nodes and features realtime notifications of events in your docker cluster.
-
-### Terminology
-* **ServeZone Manager:** A servezone manager manages a ServeZone cluster.
-* **ServeZone Service** ServezoneServices are docker containers that are scheduled using the ServeZone Manager Api
-    * Services can be categorized in Masterservices and Subservices.
-      Subservices can provide certain functionailty to Masterservices
-
-### Docker Swarm
-Under the hood we use Docker Swarm. Serve.Zone is merely a configuration candy layer that makes it easy to deploy and manage applications from within CI Jobs. In general we recommend GitLab for the CI side of things. 
-
-### Create an servezone instance.
-First off servezone will check for the `DOCKER=true` env variable.
-If docker is set to true it will look for an config at /config.
-So make sure to either copy a config file there or mount a directory with a config file in place.
-
 For further information read the linked docs at the top of this README.
 
 > MIT licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
