@@ -1,5 +1,3 @@
-import 'typings-global'
-
 import {expect, tap} from 'tapbundle'
 
 import '../dist/index'

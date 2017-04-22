@@ -60,7 +60,7 @@ pages:
   stage: pages
   script:
     - npmci command yarn global add npmpage
-    - npmci command npmpage --publish gitlab
+    - npmci command npmpage
   tags:
     - docker
   only:
