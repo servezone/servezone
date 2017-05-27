@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npmts --nodocs)"
+    "test": "(npmts --nodocs)",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
     "smartq": "^1.1.1",
     "smartsocket": "^1.1.7",
     "taskbuffer": "^1.0.12",
-    "typings-global": "^1.0.14"
-  }
+    "typings-global": "^1.0.14",
+    "snyk": "^1.31.0"
+  },
+  "snyk": true
 }
