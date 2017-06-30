@@ -48,8 +48,9 @@ There are various high level component:
 * **SzService** A ServeZone Service always maps to a docker container that is scheduled by the ServeZone Manager
     * Services can be categorized in Masterservices and Subservices.
       Subservices can provide certain functionailty to Masterservices
-    * A SzApp always has one Masterservice
-    * A SzApp can have multiple Subservices
+    * A Servezone App always has one Masterservice
+    * A Servezone App can have multiple Subservices
+    * All Servezone Services that belong to a Servezone App are connected through a docker overlay network.
 
 ### Docker Swarm
 Under the hood we use Docker Swarm. Serve.Zone is merely a configuration candy layer that makes it easy to deploy and manage applications from within CI Jobs. In general we recommend GitLab for the CI side of things. 
