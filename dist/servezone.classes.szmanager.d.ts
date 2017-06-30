@@ -15,10 +15,6 @@ export declare class SzManager {
      */
     startServer(): Promise<any>;
     /**
-     * connects to a database
-     */
-    connectDatabase(): Promise<any>;
-    /**
      * terminate Servezone Manager
      */
     terminate(): void;
