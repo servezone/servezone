@@ -55,9 +55,7 @@ There are various high level component:
 Under the hood we use Docker Swarm. Serve.Zone is merely a configuration candy layer that makes it easy to deploy and manage applications from within CI Jobs. In general we recommend GitLab for the CI side of things. 
 
 ### Create an servezone instance.
-First off servezone will check for the `DOCKER=true` env variable.
-If docker is set to true it will look for an config at /config.
-So make sure to either copy a config file there or mount a directory with a config file in place.
+Take a look at cloudly on npm for how to start a servezone instance. Its easier than kubernetes. :)
 
 For further information read the linked docs at the top of this README.
 
