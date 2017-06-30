@@ -12,7 +12,7 @@ export class SzManager {
   /**
    * constructor, sets up smartsocket
    */
-  constructor(portArg: number = 4567) {
+  constructor (portArg: number = 4567) {
     this.smartsocket = new Smartsocket({
       port: portArg
     })
@@ -21,29 +21,21 @@ export class SzManager {
       passwordHash: 'somehash' // TODO
     })
     this.smartsocket.addSocketRoles([ ciRole ])
-  };
+  }
 
   /**
    * starts a smartsocket server
    */
-  startServer(): Promise<any> {
+  startServer (): Promise<any> {
     let done = plugins.q.defer<any>()
     this.smartsocket.startServer()
     return done.promise
-  };
-
-  /**
-   * connects to a database
-   */
-  connectDatabase() {
-    let done = plugins.q.defer<any>()
-    return done.promise
-  };
+  }
 
   /**
    * terminate Servezone Manager
    */
-  terminate() {
+  terminate () {
     this.smartsocket.closeServer()
   }
-};
+}

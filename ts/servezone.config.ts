@@ -7,6 +7,6 @@ export class IServezoneConfig {
   constructor () {
     plugins.beautylog.figletSync('ServeZone')
   }
-};
+}
 
 export let servezoneConfig = new IServezoneConfig()

@@ -21,14 +21,35 @@ easy yet advanced production docker management
 ## Usage
 Use TypeScript for best in class instellisense.
 
-servezone has a ready to use [official docker image](https://hub.docker.com/r/hosttoday/ht-docker-coretraffic/).
-It uses websockets for easy communication between nodes and features realtime notifications of events in your docker cluster.
+This module is not meant for standalone use but rather as base for various parts of the servezone ecosystem. It houses all important classes so every high level component across the servezone stack has a mutual understanding of how things work
 
-### Terminology
-* **ServeZone Manager:** A servezone manager manages a ServeZone cluster.
-* **ServeZone Service** ServezoneServices are docker containers that are scheduled using the ServeZone Manager Api
+## General ideas
+
+### Websockets
+servezone uses websockets for easy communication between nodes and realtime notifications of events in your docker cluster.
+
+### Reverse Proxy
+Every node uses a reverse proxy to schedule traffic
+
+### High Level components
+There are various high level component:
+
+* **cloudly** - Uses this package to spawn up a central management instance
+* **coretraffic** - the traffic handler that runs once on every node in the cluster
+* **corebackup** - the backup handler that runs once on every node in the cluster
+* **corecdn** - the cdn handler that runs once onevery node. Enables distribution of public high availablilty content trhough every node in the cluster.
+* **coredoc** the errordoc handler that serves traffic that can't be attributed to any specific container on the node
+
+
+### Classes
+* **SzCluster** - A servezone cluster is the highest object in the servezone world and directly maps to one docker swarm cluster.
+* **SzManager** - A servezone manager manages a ServeZone cluster.
+* **SzApp** - A servezone app is an application that is supposed to run in the ServeZone cluster and is managed by an ServeZone Manager
+* **SzService** A ServeZone Service always maps to a docker container that is scheduled by the ServeZone Manager
     * Services can be categorized in Masterservices and Subservices.
       Subservices can provide certain functionailty to Masterservices
+    * A SzApp always has one Masterservice
+    * A SzApp can have multiple Subservices
 
 ### Docker Swarm
 Under the hood we use Docker Swarm. Serve.Zone is merely a configuration candy layer that makes it easy to deploy and manage applications from within CI Jobs. In general we recommend GitLab for the CI side of things. 

@@ -1,1 +1,1 @@
-import './servezone.cli';
+export { SzManager } from './servezone.classes.szmanager';
