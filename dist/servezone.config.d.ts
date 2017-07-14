@@ -1,7 +1,5 @@
-export declare class IServezoneConfig {
+export interface IServezoneConfig {
     port: number;
     authToken: string;
     configOriginRepo: string;
-    constructor();
 }
-export declare let servezoneConfig: IServezoneConfig;

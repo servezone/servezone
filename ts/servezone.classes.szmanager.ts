@@ -8,19 +8,77 @@ export class SzManager {
   port: number
   mongoConnection
   smartsocket: Smartsocket
+  appStore
 
   /**
    * constructor, sets up smartsocket
    */
-  constructor (portArg: number = 4567) {
+  constructor(portArg: number = 4567) {
     this.smartsocket = new Smartsocket({
       port: portArg
     })
-    let ciRole = new SocketRole({
+
+    // SOCKET ROLES
+    // the role of the ci
+    let roleCi = new SocketRole({
       name: 'ci',
       passwordHash: 'somehash' // TODO
     })
-    this.smartsocket.addSocketRoles([ ciRole ])
+
+    // the role of the swarm cluster
+    let roleSwarmCluster = new plugins.smartsocket.SocketRole({
+      name: 'szNode',
+      passwordHash: 'someHash' // TODO: provide a valid hash
+    })
+
+    // SOCKET FUNCTIONS
+    // 
+    let socketAddApp = new plugins.smartsocket.SocketFunction({
+      allowedRoles: [ roleCi ],
+      funcDef: async (dataArg: plugins.serveZoneInterfaces.ISocketAddApp) => {
+        this.addApp()
+      },
+      funcName: 'addApp'
+    })
+
+    let socketUpdateApp = new plugins.smartsocket.SocketFunction({
+      allowedRoles: [ roleCi ],
+      funcDef: async () => {
+        this.updateApp()
+      },
+      funcName: 'updateApp'
+    })
+
+    let socketCheckApp = new plugins.smartsocket.SocketFunction({
+      allowedRoles: [ roleCi ],
+      funcDef: async () => {
+        this.checkApp()
+      },
+      funcName: 'updateApp'
+    })
+
+    this.smartsocket.addSocketRoles([ roleCi, roleSwarmCluster ])
+  }
+
+  /**
+   * checks if a specific app is part of the servezone cluster and if yes returns data about it
+   */
+  async checkApp () {
+
+  }
+
+  /**
+   * updates an app that is in the cluster
+   */
+  async updateApp () {
+
+  }
+
+  /**
+   * adds a new app to the cluster
+   */
+  async addApp () {
+
   }
 
   /**

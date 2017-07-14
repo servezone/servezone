@@ -18,20 +18,21 @@
   },
   "homepage": "https://gitlab.com/servezone/servezone#README",
   "devDependencies": {
-    "tapbundle": "^1.0.14"
+    "tapbundle": "^1.1.1"
   },
   "dependencies": {
-    "@types/socket.io": "^1.4.29",
+    "@types/node": "^8.0.13",
     "beautylog": "^6.1.10",
     "early": "^2.1.1",
-    "lik": "^1.0.36",
-    "smartapp": "^1.0.6",
+    "lik": "^1.0.38",
+    "servezone-interfaces": "^1.0.5",
+    "smartapp": "^1.0.9",
     "smartcli": "^2.0.7",
     "smartdata": "^1.0.26",
     "smartfile": "^4.2.17",
-    "smartq": "^1.1.1",
-    "smartsocket": "^1.1.7",
-    "taskbuffer": "^1.0.17",
+    "smartq": "^1.1.6",
+    "smartsocket": "^1.1.9",
+    "taskbuffer": "^1.0.22",
     "typings-global": "^1.0.19"
   }
 }

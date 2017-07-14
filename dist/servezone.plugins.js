@@ -9,6 +9,8 @@ const path = require("path");
 exports.path = path;
 const q = require("smartq");
 exports.q = q;
+const serveZoneInterfaces = require("servezone-interfaces");
+exports.serveZoneInterfaces = serveZoneInterfaces;
 const smartapp = require("smartapp");
 exports.smartapp = smartapp;
 const smartcli = require("smartcli");
@@ -19,4 +21,4 @@ const smartsocket = require("smartsocket");
 exports.smartsocket = smartsocket;
 const taskbuffer = require("taskbuffer");
 exports.taskbuffer = taskbuffer;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VydmV6b25lLnBsdWdpbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9zZXJ2ZXpvbmUucGx1Z2lucy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDBCQUF1QjtBQUN2Qix1Q0FBc0M7QUFXbEMsOEJBQVM7QUFWYiwyQkFBMEI7QUFXdEIsa0JBQUc7QUFWUCw2QkFBNEI7QUFXeEIsb0JBQUk7QUFWUiw0QkFBMkI7QUFXdkIsY0FBQztBQVZMLHFDQUFvQztBQVdoQyw0QkFBUTtBQVZaLHFDQUFvQztBQVdoQyw0QkFBUTtBQVZaLHVDQUFzQztBQVdsQyw4QkFBUztBQVZiLDJDQUEwQztBQVd0QyxrQ0FBVztBQVZmLHlDQUF3QztBQVdwQyxnQ0FBVSJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VydmV6b25lLnBsdWdpbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9zZXJ2ZXpvbmUucGx1Z2lucy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDBCQUF1QjtBQUN2Qix1Q0FBc0M7QUFZbEMsOEJBQVM7QUFYYiwyQkFBMEI7QUFZdEIsa0JBQUc7QUFYUCw2QkFBNEI7QUFZeEIsb0JBQUk7QUFYUiw0QkFBMkI7QUFZdkIsY0FBQztBQVhMLDREQUEyRDtBQVl2RCxrREFBbUI7QUFYdkIscUNBQW9DO0FBWWhDLDRCQUFRO0FBWFoscUNBQW9DO0FBWWhDLDRCQUFRO0FBWFosdUNBQXNDO0FBWWxDLDhCQUFTO0FBWGIsMkNBQTBDO0FBWXRDLGtDQUFXO0FBWGYseUNBQXdDO0FBWXBDLGdDQUFVIn0=
