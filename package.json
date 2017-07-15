@@ -25,13 +25,14 @@
     "beautylog": "^6.1.10",
     "early": "^2.1.1",
     "lik": "^1.0.38",
-    "servezone-interfaces": "^1.0.5",
+    "servezone-interfaces": "^1.0.8",
     "smartapp": "^1.0.9",
     "smartcli": "^2.0.7",
     "smartdata": "^1.0.26",
+    "smartdelay": "^1.0.3",
     "smartfile": "^4.2.17",
     "smartq": "^1.1.6",
-    "smartsocket": "^1.1.9",
+    "smartsocket": "^1.1.10",
     "taskbuffer": "^1.0.22",
     "typings-global": "^1.0.19"
   }

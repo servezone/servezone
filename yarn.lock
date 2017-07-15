@@ -1248,9 +1248,9 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
-servezone-interfaces@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/servezone-interfaces/-/servezone-interfaces-1.0.5.tgz#82b50f2cb8ca82fb40367396ad0e689636fec82f"
+servezone-interfaces@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/servezone-interfaces/-/servezone-interfaces-1.0.8.tgz#b24f46be1da0284cb65e48554d0bbc42b4e7fb87"
   dependencies:
     smartapp "^1.0.9"
     typings-global "^1.0.19"
@@ -1411,9 +1411,9 @@ smartshell@^1.0.6:
     typings-global "^1.0.19"
     which "^1.2.14"
 
-smartsocket@^1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/smartsocket/-/smartsocket-1.1.9.tgz#255d6064d6c4f446f247f6e0e3d8bac3ef22748a"
+smartsocket@^1.1.10:
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/smartsocket/-/smartsocket-1.1.10.tgz#b41d945f22e5144d932f49a3c955b7512bdb7731"
   dependencies:
     "@types/shortid" "0.0.29"
     "@types/socket.io" "^1.4.29"
