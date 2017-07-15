@@ -34,7 +34,8 @@ Every node uses a reverse proxy to schedule traffic
 ### High Level components
 There are various high level component:
 
-* **cloudly** - Uses this package to spawn up a central management instance
+* **cloudly** - uses this package to spawn up a central management instance
+* **coreflow** - runs in docker swarm and enables secure connection to the docker remote api
 * **coretraffic** - the traffic handler that runs once on every node in the cluster
 * **corebackup** - the backup handler that runs once on every node in the cluster
 * **corecdn** - the cdn handler that runs once onevery node. Enables distribution of public high availablilty content trhough every node in the cluster.
