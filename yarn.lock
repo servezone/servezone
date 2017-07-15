@@ -39,7 +39,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/lodash@4.x.x", "@types/lodash@^4.14.55", "@types/lodash@^4.14.66", "@types/lodash@^4.14.67":
+"@types/lodash@4.x.x", "@types/lodash@^4.14.55", "@types/lodash@^4.14.67", "@types/lodash@^4.14.69":
   version "4.14.69"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.69.tgz#2bbd48c1565e02506f48ed8d1e8e53ea493fd0e6"
 
@@ -47,7 +47,7 @@
   version "2.0.29"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-2.0.29.tgz#5002e14f75e2d71e564281df0431c8c1b4a2a36a"
 
-"@types/mongodb@^2.2.6":
+"@types/mongodb@^2.2.7":
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/@types/mongodb/-/mongodb-2.2.7.tgz#35c04cb60ff06d0c6ab71cc6561e41baf094fa70"
   dependencies:
@@ -788,7 +788,7 @@ left-pad@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.1.3.tgz#612f61c033f3a9e08e939f1caebeea41b6f3199a"
 
-lik@^1.0.30, lik@^1.0.32, lik@^1.0.38:
+lik@^1.0.30, lik@^1.0.38:
   version "1.0.38"
   resolved "https://registry.yarnpkg.com/lik/-/lik-1.0.38.tgz#ccff0abd3d9236a5e4b7d80d514c5c210f18469b"
   dependencies:
@@ -912,7 +912,7 @@ mongodb-core@2.1.14:
     bson "~1.0.4"
     require_optional "~1.0.0"
 
-mongodb@^2.2.29:
+mongodb@^2.2.30:
   version "2.2.30"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-2.2.30.tgz#8ccd801f676c8172040c2f2b47e9602a0d5634ab"
   dependencies:
@@ -1308,18 +1308,18 @@ smartcli@^2.0.7:
     typings-global "^1.0.16"
     yargs "^8.0.1"
 
-smartdata@^1.0.26:
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/smartdata/-/smartdata-1.0.26.tgz#36c0843588b01a6da21bd0e3360a73b77c3fb591"
+smartdata@^1.0.27:
+  version "1.0.27"
+  resolved "https://registry.yarnpkg.com/smartdata/-/smartdata-1.0.27.tgz#195c2b852e3a16954a465717f5393b998508ae79"
   dependencies:
-    "@types/lodash" "^4.14.66"
-    "@types/mongodb" "^2.2.6"
+    "@types/lodash" "^4.14.69"
+    "@types/mongodb" "^2.2.7"
     beautylog "^6.1.10"
-    lik "^1.0.32"
+    lik "^1.0.38"
     lodash "^4.17.4"
-    mongodb "^2.2.29"
+    mongodb "^2.2.30"
     runtime-type-checks "0.0.4"
-    smartq "^1.1.1"
+    smartq "^1.1.6"
     typings-global "^1.0.19"
 
 smartdelay@^1.0.3:
