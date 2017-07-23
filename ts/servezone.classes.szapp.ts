@@ -1,14 +1,14 @@
 import * as plugins from './servezone.plugins'
 
+// interfaces
 import { IAppJSON } from 'smartapp'
 
-export type TSzAppStatus = 'created' | 'running' | 'updating' | 'terminating' | 'paused' | 'maintenance'
-
+// classes
+import { SzDeployment } from './servezone.classes.szdeployment'
 
 export class SzApp {
   appJson: IAppJSON
-  status: TSzAppStatus
-  deployHistory: string[]
+  deployment: SzDeployment
   constructor (appJsonArg: IAppJSON) {
     this.appJson = appJsonArg
   }
@@ -17,7 +17,9 @@ export class SzApp {
    * deploys the app to the servezone cluster
    */
   deploy () {
-
+    if (!this.deployment) {
+      this.deployment = new SzDeployment()
+    }
   }
 
   /**

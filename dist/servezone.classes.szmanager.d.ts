@@ -4,13 +4,15 @@ import { Objectmap } from 'lik';
 import { IAppJSON } from 'smartapp';
 import { SzApp } from './servezone.classes.szapp';
 /**
- * class SzManager manages a servezone cluster
+ * class SzManager
+ * provides the API against which to schedule apps
  */
 export declare class SzManager {
     port: number;
     mongoConnection: any;
     smartsocket: Smartsocket;
     appStore: Objectmap<SzApp>;
+    cflare: plugins.cflare.CflareAccount;
     /**
      * constructor, sets up smartsocket
      */

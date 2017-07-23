@@ -8,7 +8,8 @@ import { SzApp } from './servezone.classes.szapp'
 import { SzService } from './servezone.classes.szservice'
 
 /**
- * class SzManager manages a servezone cluster
+ * class SzManager
+ * provides the API against which to schedule apps
  */
 export class SzManager {
   port: number
@@ -16,10 +17,13 @@ export class SzManager {
   smartsocket: Smartsocket
   appStore = new plugins.lik.Objectmap<SzApp>()
 
+  // Third party controlled services
+  cflare: plugins.cflare.CflareAccount
+
   /**
    * constructor, sets up smartsocket
    */
-  constructor(portArg: number = 4567) {
+  constructor (portArg: number = 4567) {
     this.smartsocket = new Smartsocket({
       port: portArg
     })
@@ -86,7 +90,10 @@ export class SzManager {
     appJsonArg: plugins.smartapp.IAppJSON,
     shipzoneData?: plugins.serveZoneInterfaces.IShipZoneData
   ) {
+    let describedApp: SzApp = await this.checkApp(appJsonArg)
+    if (describedApp) {
 
+    }
   }
 
   /**
@@ -97,7 +104,8 @@ export class SzManager {
     shipzoneData?: plugins.serveZoneInterfaces.IShipZoneData
   ) {
     // make sure app does not exist yet
-    if (!this.checkApp(appJsonArg)) {
+    let describedApp: SzApp = await this.checkApp(appJsonArg)
+    if (!describedApp) {
       let newSzApp = new SzApp(appJsonArg)
       this.appStore.add(newSzApp)
       newSzApp.deploy()

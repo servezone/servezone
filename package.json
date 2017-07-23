@@ -23,6 +23,7 @@
   "dependencies": {
     "@types/node": "^8.0.13",
     "beautylog": "^6.1.10",
+    "cflare": "^1.0.5",
     "early": "^2.1.1",
     "lik": "^1.0.38",
     "servezone-interfaces": "^1.0.8",

@@ -255,6 +255,18 @@ camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
+cflare@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/cflare/-/cflare-1.0.5.tgz#d01fd7859e1412f45cb29f02a2227ff0471ab094"
+  dependencies:
+    beautylog "^6.1.10"
+    smartdelay "^1.0.3"
+    smartq "^1.1.1"
+    smartrequest "^1.0.6"
+    smartstring "^2.0.24"
+    tsclass "^1.0.12"
+    typings-global "^1.0.17"
+
 chai-as-promised@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/chai-as-promised/-/chai-as-promised-6.0.0.tgz#1a02a433a6f24dafac63b9c96fa1684db1aa8da6"
@@ -754,6 +766,10 @@ isarray@~1.0.0:
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
+
+js-base64@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
 
 js-yaml@^3.8.3:
   version "3.9.0"
@@ -1393,7 +1409,7 @@ smartq@^1.1.1, smartq@^1.1.6:
     typings-global "^1.0.19"
     util.promisify "^1.0.0"
 
-smartrequest@^1.0.4:
+smartrequest@^1.0.4, smartrequest@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/smartrequest/-/smartrequest-1.0.6.tgz#a006454332453b0a70d38a003a29963d039a7783"
   dependencies:
@@ -1426,6 +1442,13 @@ smartsocket@^1.1.10:
     socket.io "^2.0.3"
     socket.io-client "^2.0.3"
     typings-global "^1.0.19"
+
+smartstring@^2.0.24:
+  version "2.0.24"
+  resolved "https://registry.yarnpkg.com/smartstring/-/smartstring-2.0.24.tgz#dc1c5efb738c10a2d7daeea3d800ad2ecc65a26c"
+  dependencies:
+    js-base64 "^2.1.9"
+    typings-global "^1.0.14"
 
 socket.io-adapter@~1.1.0:
   version "1.1.0"
@@ -1600,6 +1623,10 @@ timers-ext@0.1:
 to-array@0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/to-array/-/to-array-0.1.4.tgz#17e6c11f73dd4f3d74cda7a4ff3238e9ad9bf890"
+
+tsclass@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/tsclass/-/tsclass-1.0.12.tgz#350c4e567ca7ae7fa426b95bbb77ec478ec0edef"
 
 type-detect@0.1.1:
   version "0.1.1"

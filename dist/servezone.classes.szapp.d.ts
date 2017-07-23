@@ -1,9 +1,8 @@
 import { IAppJSON } from 'smartapp';
-export declare type TSzAppStatus = 'created' | 'running' | 'updating' | 'terminating' | 'paused' | 'maintenance';
+import { SzDeployment } from './servezone.classes.szdeployment';
 export declare class SzApp {
     appJson: IAppJSON;
-    status: TSzAppStatus;
-    deployHistory: string[];
+    deployment: SzDeployment;
     constructor(appJsonArg: IAppJSON);
     /**
      * deploys the app to the servezone cluster

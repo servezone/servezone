@@ -1,5 +1,6 @@
 import 'typings-global'
 import * as beautylog from 'beautylog'
+import * as cflare from 'cflare'
 import * as lik from 'lik'
 import * as path from 'path'
 import * as q from 'smartq'
@@ -14,6 +15,7 @@ import * as taskbuffer from 'taskbuffer'
 
 export {
     beautylog,
+    cflare,
     lik,
     path,
     q,

@@ -3,6 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("typings-global");
 const beautylog = require("beautylog");
 exports.beautylog = beautylog;
+const cflare = require("cflare");
+exports.cflare = cflare;
 const lik = require("lik");
 exports.lik = lik;
 const path = require("path");
@@ -23,4 +25,4 @@ const smartsocket = require("smartsocket");
 exports.smartsocket = smartsocket;
 const taskbuffer = require("taskbuffer");
 exports.taskbuffer = taskbuffer;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VydmV6b25lLnBsdWdpbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9zZXJ2ZXpvbmUucGx1Z2lucy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDBCQUF1QjtBQUN2Qix1Q0FBc0M7QUFjbEMsOEJBQVM7QUFiYiwyQkFBMEI7QUFjdEIsa0JBQUc7QUFiUCw2QkFBNEI7QUFjeEIsb0JBQUk7QUFiUiw0QkFBMkI7QUFjdkIsY0FBQztBQWJMLDREQUEyRDtBQWN2RCxrREFBbUI7QUFidkIscUNBQW9DO0FBY2hDLDRCQUFRO0FBYloscUNBQW9DO0FBY2hDLDRCQUFRO0FBWloseUNBQXdDO0FBYXBDLGdDQUFVO0FBWmQsdUNBQXNDO0FBYWxDLDhCQUFTO0FBWmIsMkNBQTBDO0FBYXRDLGtDQUFXO0FBWmYseUNBQXdDO0FBYXBDLGdDQUFVIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VydmV6b25lLnBsdWdpbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi90cy9zZXJ2ZXpvbmUucGx1Z2lucy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDBCQUF1QjtBQUN2Qix1Q0FBc0M7QUFlbEMsOEJBQVM7QUFkYixpQ0FBZ0M7QUFlNUIsd0JBQU07QUFkViwyQkFBMEI7QUFldEIsa0JBQUc7QUFkUCw2QkFBNEI7QUFleEIsb0JBQUk7QUFkUiw0QkFBMkI7QUFldkIsY0FBQztBQWRMLDREQUEyRDtBQWV2RCxrREFBbUI7QUFkdkIscUNBQW9DO0FBZWhDLDRCQUFRO0FBZFoscUNBQW9DO0FBZWhDLDRCQUFRO0FBYloseUNBQXdDO0FBY3BDLGdDQUFVO0FBYmQsdUNBQXNDO0FBY2xDLDhCQUFTO0FBYmIsMkNBQTBDO0FBY3RDLGtDQUFXO0FBYmYseUNBQXdDO0FBY3BDLGdDQUFVIn0=
