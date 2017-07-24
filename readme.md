@@ -18,8 +18,12 @@ easy yet advanced production docker management
 [![node](https://img.shields.io/badge/node->=%206.x.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
+## Usage
+Use TypeScript for best in class instellisense.
+
 For further information read the linked docs at the top of this README.
 
 > MIT licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
+| By using this npm module you agree to our [privacy policy](https://lossless.gmbH/privacy.html)
 
-[![repo-footer](https://servezone.gitlab.io/assets/repo-footer.svg)](https://push.rocks)
+[![repo-footer](https://servezone.gitlab.io/assets/repo-footer.svg)](https://serve.zone)

@@ -9,6 +9,7 @@ import { SzDeployment } from './servezone.classes.szdeployment'
 export class SzApp {
   appJson: IAppJSON
   deployment: SzDeployment
+
   constructor (appJsonArg: IAppJSON) {
     this.appJson = appJsonArg
   }
