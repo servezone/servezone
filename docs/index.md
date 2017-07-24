@@ -32,9 +32,9 @@ servezone uses websockets for easy communication between nodes and realtime noti
 Every node uses a reverse proxy to schedule traffic
 
 ### High Level components
-There are various high level component:
+There are various high level npm modules that each run in their own docker container:
 
-* **cloudly** - uses this package to spawn up a central management instance
+* **servezone** - this package controls is the central piece and should not run in the cluster itself, but on Heroku or another managed cloud provider.
 * **coreflow** - runs in docker swarm and enables secure connection to the docker remote api
 * **coretraffic** - the traffic handler that runs once on every node in the cluster
 * **corebackup** - the backup handler that runs once on every node in the cluster
@@ -52,6 +52,7 @@ There are various high level component:
     * A Servezone App always has one Masterservice
     * A Servezone App can have multiple Subservices
     * All Servezone Services that belong to a Servezone App are connected through a docker overlay network.
+* **SzDeployment** - A servezone deployment keeps track of when an app was last deployed and exposes methods to repeat specific or all deployment steps.
 
 ### Docker Swarm
 Under the hood we use Docker Swarm. Serve.Zone is merely a configuration candy layer that makes it easy to deploy and manage applications from within CI Jobs. In general we recommend GitLab for the CI side of things. 

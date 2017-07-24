@@ -16,10 +16,12 @@ export class SzApp {
   /**
    * deploys the app to the servezone cluster
    */
-  deploy () {
+  async deploy () {
     if (!this.deployment) {
       this.deployment = new SzDeployment()
     }
+    await this.deployment.deployToCluster()
+    await this.deployment.syncCloudflare()
   }
 
   /**
