@@ -1,4 +1,4 @@
-# gitzone standard
+# gitzone npm+docker
 image: hosttoday/ht-docker-node:npmci
 
 cache:
@@ -9,6 +9,7 @@ cache:
 stages:
 - test
 - release
+- build
 - trigger
 - pages
 
@@ -46,6 +47,23 @@ release:
   tags:
     - docker
 
+buildDocker:
+  image: hosttoday/ht-docker-dbase:npmci
+  services:
+  - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay
+  stage: build
+  script:
+    - npmci prepare docker
+    - npmci build docker
+    - npmci publish docker
+  only:
+    - tags
+  tags:
+    - docker
+    - priv
+
 trigger:
   stage: trigger
   script:
@@ -69,3 +87,4 @@ pages:
     expire_in: 1 week
     paths:
     - public
+  allow_failure: true

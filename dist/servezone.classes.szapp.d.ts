@@ -7,7 +7,7 @@ export declare class SzApp {
     /**
      * deploys the app to the servezone cluster
      */
-    deploy(): void;
+    deploy(): Promise<void>;
     /**
      * syncs the state of the app with the servezone cluster
      */
