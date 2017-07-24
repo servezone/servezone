@@ -57,8 +57,12 @@ There are various high level npm modules that each run in their own docker conta
 ### Docker Swarm
 Under the hood we use Docker Swarm. Serve.Zone is merely a configuration candy layer that makes it easy to deploy and manage applications from within CI Jobs. In general we recommend GitLab for the CI side of things. 
 
-### Create an servezone instance.
-Take a look at cloudly on npm for how to start a servezone instance. Its easier than kubernetes. :)
+## shipzone and servezone - made for each other
+If you wonder how to push an app from ci to a servezone cluster take a look at shipzone on npm.
+
+shipzone is built with one target in mind: Pushing apps to servezone in a reliable manner.
+
+
 
 For further information read the linked docs at the top of this README.
 
