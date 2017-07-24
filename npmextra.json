@@ -5,6 +5,7 @@
         ]
     },
     "npmts": {
-        "coverageTreshold": 10
+        "coverageTreshold": 10,
+        "cli": true
     }
 }
