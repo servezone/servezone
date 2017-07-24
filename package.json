@@ -1,6 +1,6 @@
 {
   "name": "servezone",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "easy yet advanced production docker management",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
