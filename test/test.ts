@@ -1,6 +1,6 @@
 import {expect, tap} from 'tapbundle'
 
-import * as servezone from '../dist/index'
+import * as servezone from '../ts/index'
 
 let testCluster: servezone.SzCluster
 
