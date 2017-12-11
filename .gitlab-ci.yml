@@ -17,6 +17,7 @@ testLEGACY:
   stage: test
   script:
     - npmci node install legacy
+    - npmci npm install
     - npmci npm test
   coverage: /\d+.?\d+?\%\s*coverage/
   tags:
@@ -27,6 +28,7 @@ testLTS:
   stage: test
   script:
     - npmci node install lts
+    - npmci npm install
     - npmci npm test
   coverage: /\d+.?\d+?\%\s*coverage/
   tags:
@@ -36,6 +38,7 @@ testSTABLE:
   stage: test
   script:
     - npmci node install stable
+    - npmci npm install
     - npmci npm test
   coverage: /\d+.?\d+?\%\s*coverage/
   tags:
