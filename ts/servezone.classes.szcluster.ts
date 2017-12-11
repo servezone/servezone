@@ -12,4 +12,8 @@ export class SzCluster {
   constructor () {
     this.szManager = new SzManager()
   }
+
+  init(optionsArg) {
+
+  }
 }

@@ -11,5 +11,5 @@ export declare class SzApp {
     /**
      * syncs the state of the app with the servezone cluster
      */
-    syncState(): void;
+    syncState(): Promise<void>;
 }

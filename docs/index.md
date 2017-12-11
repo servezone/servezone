@@ -54,6 +54,7 @@ There are various high level npm modules that each run in their own docker conta
     * A Servezone App can have multiple Subservices
     * All Servezone Services that belong to a Servezone App are connected through a docker overlay network.
 * **SzDeployment** - A servezone deployment keeps track of when an app was last deployed and exposes methods to repeat specific or all deployment steps.
+* **SzNode** - a single node withing a SzCluster
 
 ### Docker Swarm
 Under the hood we use Docker Swarm. Serve.Zone is merely a configuration candy layer that makes it easy to deploy and manage applications from within CI Jobs. In general we recommend GitLab for the CI side of things. 

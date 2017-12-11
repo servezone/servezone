@@ -1,4 +1,4 @@
-import {expect, tap} from 'tapbundle'
+import { expect, tap } from 'tapbundle'
 
 import * as servezone from '../ts/index'
 

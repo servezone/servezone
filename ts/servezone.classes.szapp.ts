@@ -18,6 +18,7 @@ export class SzApp {
    * deploys the app to the servezone cluster
    */
   async deploy () {
+    await this.syncState()
     if (!this.deployment) {
       this.deployment = new SzDeployment()
     }
@@ -28,7 +29,7 @@ export class SzApp {
   /**
    * syncs the state of the app with the servezone cluster
    */
-  syncState () {
+  async syncState () {
 
   }
 }

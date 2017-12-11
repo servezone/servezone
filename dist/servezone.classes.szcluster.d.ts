@@ -6,4 +6,5 @@ import { SzManager } from './servezone.classes.szmanager';
 export declare class SzCluster {
     szManager: SzManager;
     constructor();
+    init(optionsArg: any): void;
 }
