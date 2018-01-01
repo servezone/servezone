@@ -1,3 +1,7 @@
+/**
+ * SzManager - Description
+ */
+
 import * as plugins from './servezone.plugins'
 import { Smartsocket, SocketRole } from 'smartsocket'
 import { Objectmap } from 'lik'

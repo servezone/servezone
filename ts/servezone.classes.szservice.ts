@@ -1,3 +1,7 @@
+/**
+ * SzService - Description
+ */
+
 import * as plugins from './servezone.plugins'
 import { Objectmap } from 'lik'
 

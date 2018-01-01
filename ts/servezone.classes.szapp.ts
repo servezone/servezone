@@ -1,3 +1,8 @@
+/**
+ * SzApp - Description
+ * 
+ */
+
 import * as plugins from './servezone.plugins'
 
 // interfaces
@@ -20,7 +25,7 @@ export class SzApp {
   async deploy () {
     await this.syncState()
     if (!this.deployment) {
-      this.deployment = new SzDeployment()
+      this.deployment = new SzDeployment(this)
     }
     await this.deployment.deployToCluster()
     await this.deployment.syncCloudflare()
