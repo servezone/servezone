@@ -12,7 +12,6 @@ import { SzApp } from './servezone.classes.szapp';
  */
 export declare class SzManager {
     port: number;
-    mongoConnection: any;
     smartsocket: Smartsocket;
     appStore: Objectmap<SzApp>;
     cflare: plugins.cflare.CflareAccount;
@@ -39,5 +38,5 @@ export declare class SzManager {
     /**
      * terminate Servezone Manager
      */
-    terminate(): Promise<void>;
+    close(): Promise<void>;
 }

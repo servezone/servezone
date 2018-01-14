@@ -1,13 +1,16 @@
 # servezone
+
 easy yet advanced production docker management
 
 ## Availabililty
+
 [![npm](https://servezone.gitlab.io/assets/repo-button-npm.svg)](https://www.npmjs.com/package/servezone)
 [![git](https://servezone.gitlab.io/assets/repo-button-git.svg)](https://GitLab.com/servezone/servezone)
 [![git](https://servezone.gitlab.io/assets/repo-button-mirror.svg)](https://github.com/servezone/servezone)
 [![docs](https://servezone.gitlab.io/assets/repo-button-docs.svg)](https://servezone.gitlab.io/servezone/)
 
 ## Status for master
+
 [![build status](https://GitLab.com/servezone/servezone/badges/master/build.svg)](https://GitLab.com/servezone/servezone/commits/master)
 [![coverage report](https://GitLab.com/servezone/servezone/badges/master/coverage.svg)](https://GitLab.com/servezone/servezone/commits/master)
 [![npm downloads per month](https://img.shields.io/npm/dm/servezone.svg)](https://www.npmjs.com/package/servezone)
@@ -19,11 +22,12 @@ easy yet advanced production docker management
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 ## Usage
+
 Use TypeScript for best in class instellisense.
 
 For further information read the linked docs at the top of this README.
 
 > MIT licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
-| By using this npm module you agree to our [privacy policy](https://lossless.gmbH/privacy.html)
+> | By using this npm module you agree to our [privacy policy](https://lossless.gmbH/privacy.html)
 
 [![repo-footer](https://servezone.gitlab.io/assets/repo-footer.svg)](https://serve.zone)

@@ -1,4 +1,3 @@
-import 'typings-global';
 import * as beautylog from 'beautylog';
 import * as cflare from 'cflare';
 import * as lik from 'lik';

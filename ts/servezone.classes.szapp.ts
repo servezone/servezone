@@ -1,40 +1,38 @@
 /**
  * SzApp - Description
- * 
+ *
  */
 
-import * as plugins from './servezone.plugins'
+import * as plugins from "./servezone.plugins";
 
 // interfaces
-import { IAppJSON } from 'smartapp'
+import { IAppJSON } from "smartapp";
 
 // classes
-import { SzDeployment } from './servezone.classes.szdeployment'
+import { SzDeployment } from "./servezone.classes.szdeployment";
 
 export class SzApp {
-  appJson: IAppJSON
-  deployment: SzDeployment
+  appJson: IAppJSON;
+  deployment: SzDeployment;
 
-  constructor (appJsonArg: IAppJSON) {
-    this.appJson = appJsonArg
+  constructor(appJsonArg: IAppJSON) {
+    this.appJson = appJsonArg;
   }
 
   /**
    * deploys the app to the servezone cluster
    */
-  async deploy () {
-    await this.syncState()
+  async deploy() {
+    await this.syncState();
     if (!this.deployment) {
-      this.deployment = new SzDeployment(this)
+      this.deployment = new SzDeployment(this);
     }
-    await this.deployment.deployToCluster()
-    await this.deployment.syncCloudflare()
+    await this.deployment.deployToCluster();
+    await this.deployment.syncCloudflare();
   }
 
   /**
    * syncs the state of the app with the servezone cluster
    */
-  async syncState () {
-
-  }
+  async syncState() {}
 }

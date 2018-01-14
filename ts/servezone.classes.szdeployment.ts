@@ -2,16 +2,22 @@
  * SzDeployment - Description
  */
 
-import * as plugins from './servezone.plugins'
-import { SzApp } from './index';
-export type TSzDeploymentStatus = 'created' | 'running' | 'updating' | 'terminating' | 'paused' | 'maintenance'
+import * as plugins from "./servezone.plugins";
+import { SzApp } from "./index";
+export type TSzDeploymentStatus =
+  | "created"
+  | "running"
+  | "updating"
+  | "terminating"
+  | "paused"
+  | "maintenance";
 
 /**
  * the interface for the node
  */
 export interface INode {
-  ip: number
-  lastDeployedAt: Date
+  ip: number;
+  lastDeployedAt: Date;
 }
 
 /**
@@ -19,25 +25,21 @@ export interface INode {
  * describes a deployment of an app
  */
 export class SzDeployment {
-  szApp: SzApp
-  status: TSzDeploymentStatus
-  assignedNode: INode
+  szApp: SzApp;
+  status: TSzDeploymentStatus;
+  assignedNode: INode;
 
   constructor(szAppArg: SzApp) {
-    this.szApp = szAppArg
+    this.szApp = szAppArg;
   }
 
   /**
    * deploys the app to the cluster
    */
-  deployToCluster () {
-
-  }
+  deployToCluster() {}
 
   /**
    * syncs Cloudflare
    */
-  syncCloudflare () {
-    
-  }
+  syncCloudflare() {}
 }
