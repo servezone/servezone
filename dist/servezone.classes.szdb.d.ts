@@ -1,4 +1,4 @@
-import { Db } from 'smartdata';
+import { Db } from "smartdata";
 export declare class SzDb {
     db: Db;
     constructor();

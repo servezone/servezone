@@ -1,11 +1,11 @@
 /**
  * SzManager - Description
  */
-import * as plugins from './servezone.plugins';
-import { Smartsocket } from 'smartsocket';
-import { Objectmap } from 'lik';
-import { IAppJSON } from 'smartapp';
-import { SzApp } from './servezone.classes.szapp';
+import * as plugins from "./servezone.plugins";
+import { Smartsocket } from "smartsocket";
+import { Objectmap } from "lik";
+import { IAppJSON } from "smartapp";
+import { SzApp } from "./servezone.classes.szapp";
 /**
  * class SzManager
  * provides the API against which to schedule apps

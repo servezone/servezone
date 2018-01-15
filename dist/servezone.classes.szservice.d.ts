@@ -1,4 +1,4 @@
-import { Objectmap } from 'lik';
+import { Objectmap } from "lik";
 export declare let allSzServices: Objectmap<SzService>;
 /**
  * class SzService describes a service

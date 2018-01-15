@@ -1,5 +1,5 @@
-import { SzApp } from './index';
-export declare type TSzDeploymentStatus = 'created' | 'running' | 'updating' | 'terminating' | 'paused' | 'maintenance';
+import { SzApp } from "./index";
+export declare type TSzDeploymentStatus = "created" | "running" | "updating" | "terminating" | "paused" | "maintenance";
 /**
  * the interface for the node
  */

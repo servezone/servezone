@@ -9,11 +9,9 @@ exports.allSzServices = new lik_1.Objectmap();
  * class SzService describes a service
  */
 class SzService {
-    constructor() {
-    }
+    constructor() { }
 }
 exports.SzService = SzService;
-;
 /**
  * class SzSubService extends SzService. A Subservice belongs to a Masterservice.
  */
@@ -23,4 +21,4 @@ class SzSubService extends SzService {
     }
 }
 exports.SzSubService = SzSubService;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VydmV6b25lLmNsYXNzZXMuc3pzZXJ2aWNlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vdHMvc2VydmV6b25lLmNsYXNzZXMuc3pzZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTs7R0FFRzs7QUFHSCw2QkFBK0I7QUFFcEIsUUFBQSxhQUFhLEdBQUcsSUFBSSxlQUFTLEVBQWEsQ0FBQTtBQUVyRDs7R0FFRztBQUNIO0lBZ0JFO0lBRUEsQ0FBQztDQUNGO0FBbkJELDhCQW1CQztBQUFBLENBQUM7QUFFRjs7R0FFRztBQUNILGtCQUEwQixTQUFRLFNBQVM7SUFDekM7UUFDRSxLQUFLLEVBQUUsQ0FBQTtJQUNULENBQUM7Q0FDRjtBQUpELG9DQUlDIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VydmV6b25lLmNsYXNzZXMuc3pzZXJ2aWNlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vdHMvc2VydmV6b25lLmNsYXNzZXMuc3pzZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTs7R0FFRzs7QUFHSCw2QkFBZ0M7QUFFckIsUUFBQSxhQUFhLEdBQUcsSUFBSSxlQUFTLEVBQWEsQ0FBQztBQUV0RDs7R0FFRztBQUNIO0lBZ0JFLGdCQUFlLENBQUM7Q0FDakI7QUFqQkQsOEJBaUJDO0FBRUQ7O0dBRUc7QUFDSCxrQkFBMEIsU0FBUSxTQUFTO0lBQ3pDO1FBQ0UsS0FBSyxFQUFFLENBQUM7SUFDVixDQUFDO0NBQ0Y7QUFKRCxvQ0FJQyJ9

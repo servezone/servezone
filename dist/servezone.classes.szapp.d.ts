@@ -1,5 +1,5 @@
-import { IAppJSON } from 'smartapp';
-import { SzDeployment } from './servezone.classes.szdeployment';
+import { IAppJSON } from "smartapp";
+import { SzDeployment } from "./servezone.classes.szdeployment";
 export declare class SzApp {
     appJson: IAppJSON;
     deployment: SzDeployment;
