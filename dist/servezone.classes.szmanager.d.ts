@@ -3,9 +3,6 @@
  */
 import * as plugins from "./servezone.plugins";
 import { Smartsocket } from "smartsocket";
-import { Objectmap } from "lik";
-import { IAppJSON } from "smartapp";
-import { SzApp } from "./servezone.classes.szapp";
 /**
  * class SzManager
  * provides the API against which to schedule apps
@@ -13,7 +10,7 @@ import { SzApp } from "./servezone.classes.szapp";
 export declare class SzManager {
     port: number;
     smartsocket: Smartsocket;
-    appStore: Objectmap<SzApp>;
+    appStore: any;
     cflare: plugins.cflare.CflareAccount;
     /**
      * constructor, sets up smartsocket
@@ -22,7 +19,7 @@ export declare class SzManager {
     /**
      * checks if a specific app is part of the servezone cluster and if yes returns data about it
      */
-    checkApp(appJsonArg: plugins.smartapp.IAppJSON, shipzoneData?: plugins.serveZoneInterfaces.IShipZoneData): Promise<SzApp>;
+    checkApp(appJsonArg: plugins.smartapp.IAppJSON, shipzoneData?: plugins.serveZoneInterfaces.IShipZoneData): Promise<any>;
     /**
      * updates an app that is in the cluster
      */
@@ -30,7 +27,7 @@ export declare class SzManager {
     /**
      * adds a new app to the cluster
      */
-    addApp(appJsonArg: plugins.smartapp.IAppJSON, shipzoneData?: plugins.serveZoneInterfaces.IShipZoneData): Promise<IAppJSON>;
+    addApp(appJsonArg: plugins.smartapp.IAppJSON, shipzoneData?: plugins.serveZoneInterfaces.IShipZoneData): Promise<any>;
     /**
      * starts a smartsocket server
      */

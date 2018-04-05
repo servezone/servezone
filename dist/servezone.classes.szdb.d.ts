@@ -1,7 +1,7 @@
 import { Db } from "smartdata";
 export declare class SzDb {
     db: Db;
-    constructor();
+    constructor(connectionOptions: any);
     connect(): Promise<void>;
     close(): Promise<void>;
 }
