@@ -2,15 +2,15 @@
  * SzDeployment - Description
  */
 
-import * as plugins from "./servezone.plugins";
-import { SzApp } from "./index";
+import * as plugins from './servezone.plugins';
+import { SzApp } from './index';
 export type TSzDeploymentStatus =
-  | "created"
-  | "running"
-  | "updating"
-  | "terminating"
-  | "paused"
-  | "maintenance";
+  | 'created'
+  | 'running'
+  | 'updating'
+  | 'terminating'
+  | 'paused'
+  | 'maintenance';
 
 /**
  * the interface for the node

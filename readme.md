@@ -44,27 +44,27 @@ Every node uses a reverse proxy to manage traffic distribution to services.
 
 There are various high level npm modules that each run in their own docker container:
 
-* **servezone** - _npm module_ - this package is the central core of servezone and contains major parts of the scheduling logic
-* **cloudly** - _npm tool_ - this package contains the scheduling API for the outside world and should run outside of any cluster. It can even create new clusters from scratch by using the Digital Ocean API
-* **coreflow** - _docker container_ - runs in docker swarm and enables secure connection to the docker remote api
-* **coretraffic** - _docker container_ the traffic handler that runs once on every node in the cluster
-* **corebackup** - _docker container_ the backup handler that runs once on every node in the cluster
-* **corecdn** - _docker container_ the cdn handler that runs once onevery node. Enables distribution of public high availablilty content trhough every node in the cluster.
-* **coredoc** _docker container_ the errordoc handler that serves traffic that can't be attributed to any specific container on the node
+- **servezone** - _npm module_ - this package is the central core of servezone and contains major parts of the scheduling logic
+- **cloudly** - _npm tool_ - this package contains the scheduling API for the outside world and should run outside of any cluster. It can even create new clusters from scratch by using the Digital Ocean API
+- **coreflow** - _docker container_ - runs in docker swarm and enables secure connection to the docker remote api
+- **coretraffic** - _docker container_ the traffic handler that runs once on every node in the cluster
+- **corebackup** - _docker container_ the backup handler that runs once on every node in the cluster
+- **corecdn** - _docker container_ the cdn handler that runs once onevery node. Enables distribution of public high availablilty content trhough every node in the cluster.
+- **coredoc** _docker container_ the errordoc handler that serves traffic that can't be attributed to any specific container on the node
 
 ### Classes
 
-* **SzCluster** - A servezone cluster is the highest object in the servezone world and directly maps to one docker swarm cluster.
-* **SzManager** - A servezone manager manages a ServeZone cluster.
-* **SzApp** - A servezone app is an application that is supposed to run in the ServeZone cluster and is managed by an ServeZone Manager
-* **SzService** A ServeZone Service always maps to a docker container that is scheduled by the ServeZone Manager
-  * Services can be categorized in Masterservices and Subservices.
+- **SzCluster** - A servezone cluster is the highest object in the servezone world and directly maps to one docker swarm cluster.
+- **SzManager** - A servezone manager manages a ServeZone cluster.
+- **SzApp** - A servezone app is an application that is supposed to run in the ServeZone cluster and is managed by an ServeZone Manager
+- **SzService** A ServeZone Service always maps to a docker container that is scheduled by the ServeZone Manager
+  - Services can be categorized in Masterservices and Subservices.
     Subservices can provide certain functionailty to Masterservices
-  * A Servezone App always has one Masterservice
-  * A Servezone App can have multiple Subservices
-  * All Servezone Services that belong to a Servezone App are connected through a docker overlay network.
-* **SzDeployment** - A servezone deployment keeps track of when an app was last deployed and exposes methods to repeat specific or all deployment steps.
-* **SzNode** - a single node withing a SzCluster
+  - A Servezone App always has one Masterservice
+  - A Servezone App can have multiple Subservices
+  - All Servezone Services that belong to a Servezone App are connected through a docker overlay network.
+- **SzDeployment** - A servezone deployment keeps track of when an app was last deployed and exposes methods to repeat specific or all deployment steps.
+- **SzNode** - a single node withing a SzCluster
 
 ### Docker Swarm
 

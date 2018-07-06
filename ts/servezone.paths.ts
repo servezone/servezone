@@ -1,3 +1,3 @@
-import * as plugins from "./servezone.plugins";
+import * as plugins from './servezone.plugins';
 
-export let packageDir = plugins.path.join(__dirname, "../");
+export let packageDir = plugins.path.join(__dirname, '../');

@@ -2,14 +2,14 @@
  * SzManager - Description
  */
 
-import * as plugins from "./servezone.plugins";
-import { Smartsocket, SocketRole } from "smartsocket";
-import { Objectmap } from "lik";
-import { IAppJSON } from "smartapp";
+import * as plugins from './servezone.plugins';
+import { Smartsocket, SocketRole } from 'smartsocket';
+import { Objectmap } from 'lik';
+import { IAppJSON } from 'smartapp';
 
 // classes
-import { SzApp } from "./servezone.classes.szapp";
-import { SzService } from "./servezone.classes.szservice";
+import { SzApp } from './servezone.classes.szapp';
+import { SzService } from './servezone.classes.szservice';
 
 /**
  * class SzManager
@@ -34,14 +34,14 @@ export class SzManager {
     // SOCKET ROLES
     // the role of the ci
     let roleCi = new SocketRole({
-      name: "ci",
-      passwordHash: "somehash" // TODO
+      name: 'ci',
+      passwordHash: 'somehash' // TODO
     });
 
     // the role of the swarm cluster
     let roleSwarmCluster = new plugins.smartsocket.SocketRole({
-      name: "szNode",
-      passwordHash: "someHash" // TODO: provide a valid hash
+      name: 'szNode',
+      passwordHash: 'someHash' // TODO: provide a valid hash
     });
 
     // SOCKET FUNCTIONS
@@ -51,17 +51,15 @@ export class SzManager {
       funcDef: async (dataArg: plugins.serveZoneInterfaces.ISocketAddApp) => {
         return await this.addApp(dataArg.appJSON);
       },
-      funcName: "addApp"
+      funcName: 'addApp'
     });
 
     let socketUpdateApp = new plugins.smartsocket.SocketFunction({
       allowedRoles: [roleCi],
-      funcDef: async (
-        dataArg: plugins.serveZoneInterfaces.ISocketUpdateApp
-      ) => {
+      funcDef: async (dataArg: plugins.serveZoneInterfaces.ISocketUpdateApp) => {
         return await this.updateApp(dataArg.appJSON);
       },
-      funcName: "updateApp"
+      funcName: 'updateApp'
     });
 
     let socketCheckApp = new plugins.smartsocket.SocketFunction({
@@ -69,7 +67,7 @@ export class SzManager {
       funcDef: async (dataArg: plugins.serveZoneInterfaces.ISocketCheckApp) => {
         return await this.checkApp(dataArg.appJSON);
       },
-      funcName: "updateApp"
+      funcName: 'updateApp'
     });
 
     this.smartsocket.addSocketRoles([roleCi, roleSwarmCluster]);

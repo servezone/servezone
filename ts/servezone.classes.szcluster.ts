@@ -2,9 +2,9 @@
  * SzManager - Description
  */
 
-import * as plugins from "./servezone.plugins";
+import * as plugins from './servezone.plugins';
 
-import { SzManager } from "./servezone.classes.szmanager";
+import { SzManager } from './servezone.classes.szmanager';
 
 /**
  * class SzCluster

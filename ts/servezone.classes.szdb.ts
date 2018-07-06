@@ -1,6 +1,6 @@
-import * as plugins from "./servezone.plugins";
+import * as plugins from './servezone.plugins';
 
-import { Db } from "smartdata";
+import { Db } from 'smartdata';
 
 export class SzDb {
   db: Db;
@@ -9,7 +9,7 @@ export class SzDb {
   }
 
   async connect() {
-    this.db.setSsl(process.env.RDB_CERT, "base64");
+    this.db.setSsl(process.env.RDB_CERT, 'base64');
     await this.db.connect();
   }
 

@@ -2,8 +2,8 @@
  * SzService - Description
  */
 
-import * as plugins from "./servezone.plugins";
-import { Objectmap } from "lik";
+import * as plugins from './servezone.plugins';
+import { Objectmap } from 'lik';
 
 export let allSzServices = new Objectmap<SzService>();
 

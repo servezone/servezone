@@ -3,13 +3,13 @@
  *
  */
 
-import * as plugins from "./servezone.plugins";
+import * as plugins from './servezone.plugins';
 
 // interfaces
-import { IAppJSON } from "smartapp";
+import { IAppJSON } from 'smartapp';
 
 // classes
-import { SzDeployment } from "./servezone.classes.szdeployment";
+import { SzDeployment } from './servezone.classes.szdeployment';
 
 export class SzApp {
   appJson: IAppJSON;
