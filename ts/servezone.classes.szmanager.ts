@@ -121,7 +121,7 @@ export class SzManager {
    * starts a smartsocket server
    */
   async startServer(): Promise<any> {
-    this.smartsocket.startServer();
+    this.smartsocket.start();
     await plugins.smartdelay.delayFor(1000); // hack, but no better solution for now.
   }
 
@@ -129,6 +129,6 @@ export class SzManager {
    * terminate Servezone Manager
    */
   async close() {
-    this.smartsocket.closeServer();
+    this.smartsocket.stop();
   }
 }

@@ -7,8 +7,8 @@ import * as servezone from '../ts/index';
 let testCluster: servezone.SzCluster;
 let testDb: servezone.SzDb;
 
-tap.test('should setup a db', async () => {
-  testDb = new servezone.SzDb();
+tap.skip.test('should setup a db', async () => {
+  testDb = new servezone.SzDb({});
   await testDb.connect();
 });
 
