@@ -1,5 +1,5 @@
-import { expect, tap } from 'tapbundle';
-import { Qenv } from 'qenv';
+import { expect, tap } from '@pushrocks/tapbundle';
+import { Qenv } from '@pushrocks/qenv';
 let testQenv = new Qenv('./', './.nogit/');
 
 import * as servezone from '../ts/index';

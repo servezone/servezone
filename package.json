@@ -23,23 +23,23 @@
   },
   "homepage": "https://gitlab.com/servezone/servezone#README",
   "devDependencies": {
-    "@gitzone/tsrun": "^1.1.2",
-    "@types/node": "^10.5.2",
-    "qenv": "^1.1.7",
-    "tapbundle": "^2.0.2"
+    "@gitzone/tsrun": "^1.1.12",
+    "@pushrocks/qenv": "^2.0.2",
+    "@pushrocks/tapbundle": "^3.0.7",
+    "@types/node": "^10.9.4"
   },
   "dependencies": {
-    "@pushrocks/smartcli": "^3.0.2",
+    "@mojoio/cloudflare": "^2.0.0",
+    "@pushrocks/lik": "^3.0.1",
+    "@pushrocks/smartcli": "^3.0.4",
     "@pushrocks/smartdata": "^3.1.2",
-    "@pushrocks/smartdelay": "^2.0.1",
-    "@pushrocks/smartfile": "^6.0.3",
-    "@pushrocks/smartlog": "^1.0.6",
+    "@pushrocks/smartdelay": "^2.0.2",
+    "@pushrocks/smartfile": "^6.0.8",
+    "@pushrocks/smartlog": "^2.0.1",
     "@pushrocks/smartpromise": "^2.0.5",
-    "cflare": "^1.0.5",
-    "lik": "^2.0.5",
+    "@pushrocks/taskbuffer": "^2.0.5",
     "servezone-interfaces": "^1.0.9",
     "smartapp": "^1.0.14",
-    "smartsocket": "^1.1.19",
-    "taskbuffer": "^1.0.22"
+    "smartsocket": "^1.1.19"
   }
 }
