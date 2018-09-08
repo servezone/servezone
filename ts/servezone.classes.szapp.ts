@@ -6,12 +6,21 @@
 import * as plugins from './servezone.plugins';
 
 // interfaces
-import { IAppJSON } from 'smartapp';
+import { IAppJSON } from '@servezone/appjson';
 
 // classes
 import { SzDeployment } from './servezone.classes.szdeployment';
 
+/**
+ * the main class describing an app
+ */
 export class SzApp {
+  /** 
+   * creates an app from an app.json like structure
+   */
+  public static async fromAppJson () {}
+  public static async fromDatabase () {}
+
   appJson: IAppJSON;
   deployment: SzDeployment;
 

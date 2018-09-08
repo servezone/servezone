@@ -4,28 +4,23 @@ let testQenv = new Qenv('./', './.nogit/');
 
 import * as servezone from '../ts/index';
 
-let testCluster: servezone.SzCluster;
+let testServezone: servezone.ServeZone;
 let testDb: servezone.SzDb;
 
-tap.skip.test('should setup a db', async () => {
-  testDb = new servezone.SzDb({});
-  await testDb.connect();
-});
-
 tap.test('servezone', async () => {
-  testCluster = new servezone.SzCluster();
-  expect(testCluster.szManager).to.be.instanceof(servezone.SzManager);
+  testServezone = new servezone.ServeZone({
+    port: 8081
+  });
 });
 
 tap.test('servezone should start server', async () => {
-  await testCluster.szManager.startServer();
+  await testServezone.startServer()
 });
 
 tap.test('shipzone should be able to schedule app', async () => {});
 
 tap.test('servezone should terminate correctly', async () => {
-  await testCluster.szManager.close();
-  await testDb.close();
+  await testServezone.closeServer();
 });
 
 tap.start();

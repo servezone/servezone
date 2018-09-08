@@ -1,20 +1,27 @@
 /**
- * SzManager - Description
+ * Servezone
+ * the main servezone
  */
 
 import * as plugins from './servezone.plugins';
-
-import { SzManager } from './servezone.classes.szmanager';
+import { ServeZone } from './servezone.classes.servezone';
 
 /**
  * class SzCluster
  * takes care of communicating with the coreflow Container in the dockerSwarm cluster
  */
 export class SzCluster {
-  szManager: SzManager;
+  /**
+   * this inits any clusters stored in the database
+   */
+  initClustersFromDatabase() {
+
+  }
+
+  szManager: ServeZone;
 
   constructor() {
-    this.szManager = new SzManager();
+    
   }
 
   init(optionsArg) {}

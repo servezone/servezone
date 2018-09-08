@@ -1,7 +1,0 @@
-import * as plugins from './servezone.plugins';
-
-export interface IServezoneConfig {
-  port: number;
-  authToken: string;
-  configOriginRepo: string;
-}

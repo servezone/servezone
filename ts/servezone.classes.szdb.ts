@@ -1,15 +1,14 @@
 import * as plugins from './servezone.plugins';
 
-import { Db } from 'smartdata';
+import { SmartdataDb } from '@pushrocks/smartdata';
 
 export class SzDb {
-  db: Db;
+  db: SmartdataDb;
   constructor(connectionOptions) {
-    this.db = new Db(connectionOptions);
+    this.db = new SmartdataDb(connectionOptions);
   }
 
   async connect() {
-    this.db.setSsl(process.env.RDB_CERT, 'base64');
     await this.db.connect();
   }
 

@@ -2,33 +2,47 @@
  * SzManager - Description
  */
 
+// Dependencies for this file
 import * as plugins from './servezone.plugins';
 import { Smartsocket, SocketRole } from 'smartsocket';
 import { Objectmap } from 'lik';
-import { IAppJSON } from 'smartapp';
+import { IAppJSON } from '@servezone/appjson';
+import { Smartlog } from '@pushrocks/smartlog'
 
 // classes
 import { SzApp } from './servezone.classes.szapp';
 import { SzService } from './servezone.classes.szservice';
 
 /**
- * class SzManager
+ * the config
+ */
+export interface IServezoneConfig {
+  port: number;
+}
+
+/**
+ * class ServeZone
  * provides the API against which to schedule apps
  */
-export class SzManager {
-  port: number;
+export class ServeZone {
+  config: IServezoneConfig;
   smartsocket: Smartsocket;
   appStore = new plugins.lik.Objectmap<SzApp>();
+  logger: Smartlog;
 
   // Third party controlled services
-  cflare: plugins.cflare.CflareAccount;
+  cloudflareAccount: plugins.cloudflare.CloudflareAccount;
 
   /**
    * constructor, sets up smartsocket
    */
-  constructor(portArg: number = 4567) {
+  constructor(configArg: IServezoneConfig) {
+    this.config = configArg
+  }
+
+  async initialize () {
     this.smartsocket = new Smartsocket({
-      port: portArg
+      port: this.config.port
     });
 
     // SOCKET ROLES
@@ -128,7 +142,7 @@ export class SzManager {
   /**
    * terminate Servezone Manager
    */
-  async close() {
+  async closeServer() {
     this.smartsocket.stop();
   }
 }
