@@ -14,7 +14,7 @@ tap.test('servezone', async () => {
 });
 
 tap.test('servezone should start server', async () => {
-  await testServezone.startServer()
+  await testServezone.startServer();
 });
 
 tap.test('shipzone should be able to schedule app', async () => {});

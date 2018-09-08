@@ -14,15 +14,11 @@ export class SzCluster {
   /**
    * this inits any clusters stored in the database
    */
-  initClustersFromDatabase() {
-
-  }
+  initClustersFromDatabase() {}
 
   szManager: ServeZone;
 
-  constructor() {
-    
-  }
+  constructor() {}
 
   init(optionsArg) {}
 }

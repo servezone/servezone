@@ -7,7 +7,7 @@ import * as plugins from './servezone.plugins';
 import { Smartsocket, SocketRole } from 'smartsocket';
 import { Objectmap } from 'lik';
 import { IAppJSON } from '@servezone/appjson';
-import { Smartlog } from '@pushrocks/smartlog'
+import { Smartlog } from '@pushrocks/smartlog';
 
 // classes
 import { SzApp } from './servezone.classes.szapp';
@@ -37,10 +37,10 @@ export class ServeZone {
    * constructor, sets up smartsocket
    */
   constructor(configArg: IServezoneConfig) {
-    this.config = configArg
+    this.config = configArg;
   }
 
-  async initialize () {
+  async initialize() {
     this.smartsocket = new Smartsocket({
       port: this.config.port
     });
