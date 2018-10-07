@@ -9,9 +9,6 @@
     "test": "(tstest test/)",
     "build": "(tsbuild)"
   },
-  "bin": {
-    "servezone": "dist/cli.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/servezone/servezone.git"
