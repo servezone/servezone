@@ -1,12 +1,6 @@
 {
     "npmci": {
-        "npmGlobalTools": [
-            "@gitzone/npmts"
-        ],
+        "npmGlobalTools": [],
         "npmAccessLevel": "public"
-    },
-    "npmts": {
-        "coverageTreshold": 10,
-        "cli": true
     }
 }

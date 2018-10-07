@@ -28,12 +28,12 @@
     "@gitzone/tstest": "^1.0.15",
     "@pushrocks/qenv": "^2.0.2",
     "@pushrocks/tapbundle": "^3.0.7",
-    "@types/node": "^10.9.4"
+    "@types/node": "^10.11.4"
   },
   "dependencies": {
     "@mojoio/cloudflare": "^2.0.0",
     "@pushrocks/lik": "^3.0.1",
-    "@pushrocks/smartcli": "^3.0.4",
+    "@pushrocks/smartcli": "^3.0.6",
     "@pushrocks/smartdata": "^3.1.2",
     "@pushrocks/smartdelay": "^2.0.2",
     "@pushrocks/smartfile": "^6.0.8",
