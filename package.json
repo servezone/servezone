@@ -23,14 +23,14 @@
     "@gitzone/tsbuild": "^2.1.11",
     "@gitzone/tsrun": "^1.2.8",
     "@gitzone/tstest": "^1.0.24",
-    "@pushrocks/qenv": "^2.0.2",
+    "@pushrocks/qenv": "^4.0.2",
     "@pushrocks/tapbundle": "^3.0.11",
-    "@types/node": "^10.11.4"
+    "@types/node": "^12.7.0"
   },
   "dependencies": {
     "@pushrocks/lik": "^3.0.10",
     "@pushrocks/smartdelay": "^2.0.3",
-    "@pushrocks/smartpromise": "^2.0.5",
+    "@pushrocks/smartpromise": "^3.0.2",
     "@pushrocks/taskbuffer": "^2.0.7",
     "@servezone/appjson": "^1.0.23",
     "@servezone/servezone-interfaces": "^2.0.4"

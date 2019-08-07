@@ -1,2 +1,1 @@
-vars:
-  - MONGO_CONNECTION_URL
+required:
