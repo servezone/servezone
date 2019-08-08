@@ -4,7 +4,6 @@
  */
 
 import * as plugins from './servezone.plugins';
-import { ServeZone } from './servezone.classes.servezone';
 
 /**
  * class SzCluster
@@ -15,8 +14,6 @@ export class SzCluster {
    * this inits any clusters stored in the database
    */
   initClustersFromDatabase() {}
-
-  szManager: ServeZone;
 
   constructor() {}
 

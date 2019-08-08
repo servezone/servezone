@@ -3,7 +3,6 @@
  */
 
 import * as plugins from './servezone.plugins';
-import { SzApp } from './index';
 export type TSzDeploymentStatus =
   | 'created'
   | 'running'
@@ -25,12 +24,10 @@ export interface INode {
  * describes a deployment of an app
  */
 export class SzDeployment {
-  szApp: SzApp;
   status: TSzDeploymentStatus;
   assignedNode: INode;
 
-  constructor(szAppArg: SzApp) {
-    this.szApp = szAppArg;
+  constructor() {
   }
 
   /**

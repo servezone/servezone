@@ -3,7 +3,7 @@
  */
 
 import * as plugins from './servezone.plugins';
-import { Objectmap } from 'lik';
+import { Objectmap } from '@pushrocks/lik';
 
 export let allSzServices = new Objectmap<SzService>();
 
